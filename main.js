@@ -39,9 +39,11 @@ function goFetch(search) {
         response.json().then(function(data) {
           // console.log(data);
           // container.innerHTML = ''
+          results.innerHTML = ""
           for (var i = 0; i < data.results.length; i++) {
-            let image = data.results[i].artworkUrl100;
             let div = document.createElement('div')
+            console.log(data.results[i].trackName);
+            let image = data.results[i].artworkUrl100;
             results.appendChild(div)
             div.classList.add('return')
             let audioSrc = data.results[i].previewUrl
@@ -51,6 +53,7 @@ function goFetch(search) {
             let template = `
             <img src="${image}" alt="">
             <h3>${data.results[i].trackName}</h3>
+            <i class="fa fa-play-circle" aria-hidden="true"></i>
             `
             div.innerHTML += template;
 

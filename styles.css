@@ -25,20 +25,23 @@ header {
   justify-content: center; }
 
 .return {
-  border-radius: 10px;
   background-color: white;
-  border: 1px solid #414A84;
+  padding: 10px;
+  border: 1px solid #ffd3d1;
   color: #414A84;
+  text-align: center;
+  flex-basis: 16%;
+  display: flex;
   flex-direction: column;
-  margin: 10px;
-  justify-content: center;
-  align-self: center;
-  flex-basis: 16%; }
+  justify-content: space-between;
+}
 
 img {
   padding: 20px;
-  height: 100px;
-  justify-content: center; }
+  align-self: center;
+  width: 100px;
+  justify-content: center;
+}
 
 h1 {
   color: #414A84;
@@ -91,7 +94,8 @@ h3 {
   font-size: 14px;
   text-align: center; }
 
-.fa-apple:before {
-  margin-left: 20px; }
+.fa-play-circle:before {
+  text-align: center;
+}
 
 /*# sourceMappingURL=styles.css.map */

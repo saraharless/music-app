@@ -14,12 +14,13 @@ body {
 }
 
 .container{
-  // width: 80%;
-  // justify-content: center;
+  border-radius: 10px;
+  background-color: white;
+  width: 80%;
+  background-color: white;
 }
 
 header {
-  // margin-bottom: 20px;
   text-align: center;
   justify-content: center;
 }
@@ -33,27 +34,26 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
 }
 
 .return {
-  border-radius: 10px;
-  background-color: white;
-  border: 1px solid #414A84;
   color: #414A84;
-  flex-direction: column;
-  // padding: 80px 20px;
-  margin: 10px;
-  // height: 400px;
-  justify-content: center;
-  align-self: center;
+  // flex-direction: column;
+  // margin: 10px;
   flex-basis: 16%;
+  // border: 1px solid #414A84;
+  border: 1px solid white;
+
+
 
 }
 
 img {
-  padding: 20px;
+  padding: 5px 20px;
   height: 100px;
   justify-content: center;
+  // border-radius: 50px;
 }
 
 h1 {
@@ -107,7 +107,8 @@ input {
 p {
   font-size: 16px;
   color: grey;
-  // margin-top: 10px;
+  margin: 0;
+  padding-top: 0px;
 }
 
 h3 {
@@ -115,7 +116,7 @@ h3 {
   text-align: center;
   // margin-left: 10px;
 }
-
-.fa-apple:before {
-  margin-left: 20px;
-}
+//
+// .fa-apple:before {
+//   margin-left: 20px;
+// }
