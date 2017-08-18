@@ -15,9 +15,9 @@ let searchform = document.querySelector('.search-form')
 let player = document.querySelector('.music-player')
 let button = document.querySelector('.submitbutton')
 let form =
-document.querySelector('.search-form')
+  document.querySelector('.search-form')
 let results =
-document.querySelector('.results')
+  document.querySelector('.results')
 
 
 form.addEventListener('submit', function(event) {
@@ -42,12 +42,12 @@ function goFetch(search) {
           results.innerHTML = ""
           for (var i = 0; i < data.results.length; i++) {
             let div = document.createElement('div')
-            console.log(data.results[i].trackName);
+            console.log(data.results[i]);
             let image = data.results[i].artworkUrl100;
             results.appendChild(div)
             div.classList.add('return')
             let audioSrc = data.results[i].previewUrl
-            div.addEventListener('click', function(){
+            div.addEventListener('click', function() {
               player.src = audioSrc;
             })
             let template = `
@@ -56,15 +56,8 @@ function goFetch(search) {
             <i class="fa fa-play-circle" aria-hidden="true"></i>
             `
             div.innerHTML += template;
-
-
-            //once results come back, get song to play in same tab
-
           }
-
         });
-
       }
-
     )
 }
