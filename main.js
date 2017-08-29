@@ -42,6 +42,7 @@ function goFetch(search) {
           results.innerHTML = ""
           for (var i = 0; i < data.results.length; i++) {
             let div = document.createElement('div')
+            let template = '';
             console.log(data.results[i]);
             let image = data.results[i].artworkUrl100;
             results.appendChild(div)
@@ -50,7 +51,7 @@ function goFetch(search) {
             div.addEventListener('click', function() {
               player.src = audioSrc;
             })
-            let template = `
+            template = `
             <img src="${image}" alt="">
             <h3>${data.results[i].trackName}</h3>
             <i class="fa fa-play-circle" aria-hidden="true"></i>

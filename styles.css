@@ -51,7 +51,13 @@ img {
   width: 100px;
   justify-content: center;
   margin-top: 5px;
+  filter: grayscale(100%);
 }
+
+img:hover {
+  filter: grayscale(0%);
+}
+
 
 h1 {
   color: white;
